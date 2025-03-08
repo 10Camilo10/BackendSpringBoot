@@ -1,24 +1,26 @@
 package dev.germantovar.springboot.entities;
+
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
+
 import javax.persistence.*;
+
 @Entity
-@Table(name = "proveedores")
+@Table(name = "review")
 @Setter
 @Getter
 @ToString
 @EqualsAndHashCode
-public class Customer {
+public class Review {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String nombre1;
-    private String direccion;
-    private String telefono;
-
-
+    private String user;
+    private String book;
+    private String review_description;
+    private int stars;
 }
 
 
