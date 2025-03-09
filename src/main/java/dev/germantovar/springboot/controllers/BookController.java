@@ -1,6 +1,6 @@
 package dev.germantovar.springboot.controllers;
 
-
+import dev.germantovar.springboot.entities.Book;
 import dev.germantovar.springboot.repository.BookRepository;
 import dev.germantovar.springboot.services.IBookService;
 import org.springframework.beans.factory.annotation.Autowired;
