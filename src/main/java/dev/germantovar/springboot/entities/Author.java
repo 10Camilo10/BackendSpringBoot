@@ -8,18 +8,18 @@ import lombok.ToString;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "gender")
+@Table(name = "author")
 @Setter
 @Getter
 @ToString
 @EqualsAndHashCode
-public class Gender {
+public class Author {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String gender_name;
-    private String gender_description;
+    private String author_name;
+    private String information;
+    private String country;
 }
-
 
 
