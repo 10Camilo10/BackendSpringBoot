@@ -21,7 +21,7 @@ public class Book {
     private String gender;
     private String author;
     private String title;
-    private String loan;
+    private Boolean loan;
 
 
 
